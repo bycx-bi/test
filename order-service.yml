@@ -1,0 +1,44 @@
+spring:
+  datasource:
+    type: org.apache.tomcat.jdbc.pool.DataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://121.196.229.159:3306/business_intelligence?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: Developer
+    password: 69e78a08-6df8-11e7-a350-00163e013527
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          # 自动创建表
+          auto: update
+  cloud:
+    # stream相关配置
+    stream:
+      default:
+        # 消息内容序列化格式
+        contentType: application/json
+      # 通道设置
+      bindings:
+        # 短信通道相关配置
+        sms-send:
+          # 绑定具体的mq实现
+          binder: mq1
+          # 目的地
+          destination: sms-send
+          contentType: application/json
+        # 订单事件
+        order-event:
+          binder: mq1
+          contentType: application/json
+      # 具体接入的mq实现 
+      binders:
+        # 命名为mq1，使用rabbitmq
+        mq1:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: 120.26.118.194
+                port: 5672
+                username: guest
+                password: guest
