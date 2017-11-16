@@ -36,4 +36,4 @@ spring:
                 host: 120.26.118.194
                 port: 5672
                 username: guest
-                password: guest
+                password: '{cipher}09f64e58c18ebc48d6a08b568d92f5cc9fc5b21e928a7b66dbd5b1d6473ee2bf'
