@@ -2,7 +2,7 @@ spring:
   datasource:
     type: org.apache.tomcat.jdbc.pool.DataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://10.47.61.175:3306/business_intelligence?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://10.47.61.175:3306/business_intelligence?useUnicode=true&amp;characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull
     username: Developer
     password: 69e78a08-6df8-11e7-a350-00163e013527
   jpa:
