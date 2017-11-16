@@ -3,7 +3,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://10.47.61.175:3306/business_intelligence?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: Developer
-    password: 69e78a08-6df8-11e7-a350-00163e013527
+    password: '{cipher}ee9ee4bcaf942314b8ce9bf4b66ca8439db1c8754f75b9f943e744a28fc2eb4776838c55604662ae200e54d0b0a4b82255af7f45d0c79644eab619a4dca287ed'
   jpa:
     properties:
       hibernate:
