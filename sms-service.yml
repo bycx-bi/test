@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://121.196.229.159:3306/business_intelligence?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://10.47.61.175:3306/business_intelligence?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: Developer
     password: 69e78a08-6df8-11e7-a350-00163e013527
   jpa:
